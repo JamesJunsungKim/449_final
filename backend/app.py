@@ -199,7 +199,7 @@ def upload_file():
 
     if file:
         filename = secure_filename(file.filename)
-        file_path = os.path.join("/Users/james/Desktop/projects/samples/449_final", filename)
+        file_path = os.path.join("/Users/james/Desktop/projects/449/backend", filename)
         file.save(file_path)
 
         return jsonify({'message': 'File uploaded and extracted successfully', 'filename': filename}), 200
